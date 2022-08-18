@@ -2,7 +2,6 @@
   "name": "command-executer",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +9,7 @@
   "author": "In5lux",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.1.0"
+    "inquirer": "^8.2.4"
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.0",

@@ -11,11 +11,11 @@ export class FileService {
 		}
 	}
 
-	public getFilePath(path: string, name: string, ext: string) {
+	public getFilePath(path: string, name: string, ext: string): string {
 		if (!isAbsolute(path)) {
 			path = join(__dirname + '/' + path);
 		}
-		return join(dirname(path) + '/' + '.' + ext);
+		return join(dirname(path) + '/' + name + '.' + ext);
 	}
 
 	async deleteFileIfExist(path: string) {
